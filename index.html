@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Instalador Mando Bluetooth</title>
+    <script type="module" src="https://unpkg.com/esp-web-tools@9/dist/web/install-button.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #121212;
+        color: #f0f0f0;
+        font-family: 'Press Start 2P', sans-serif;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+
+      .container {
+        max-width: 600px;
+        padding: 20px;
+      }
+
+      img {
+        width: 150px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+      }
+
+      h1 {
+        font-size: 1em;
+        color: #fbeb04;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 0.6em;
+        line-height: 1.5em;
+        margin-bottom: 30px;
+      }
+
+      esp-web-install-button.installer-button {
+        display: inline-block;
+        padding: 14px 28px;
+        background-color: #00aaff;
+        border-radius: 12px;
+        color: black;
+        font-size: 0.7em;
+        text-transform: uppercase;
+        box-shadow: 0 0 15px rgba(237, 29, 82, 0.5);
+        transition: 0.3s ease;
+      }
+
+      esp-web-install-button.installer-button:hover {
+        filter: brightness(1.1);
+        cursor: pointer;
+      }
+
+      footer {
+        margin-top: 50px;
+        font-size: 0.45em;
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="logo-novenretro.png" alt="NovenRetro">
+      <h1>Firmware de Mando Bluetooth FAMICOM</h1>
+      <p>Conectá tu ESP32 por USB, seleccionalo entre los COM que puedan aparecerte y presioná el botón para cargarle el firmware.  
+        <br><br>Puede que sea necesario que mantengas apretado el botón de Boot de tu ESP32 mientras se realiza el proceso.</p>
+        <p>Recuerda debes ingresar desde Google Chrome o Edge en PC para que funcione correctamente.</p>
+      
+      <esp-web-install-button class="" manifest="manifest.json">
+        Instalar Mando Bluetooth
+      </esp-web-install-button>
+
+      <footer>Desarrollado por @NovenRetro · Córdoba, Argentina</footer>
+    </div>
+  </body>
+</html>
