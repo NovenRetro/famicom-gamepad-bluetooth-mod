@@ -60,9 +60,46 @@
         cursor: pointer;
       }
 
+      .github-link {
+  margin-top: 30px;
+}
+
+.github-link a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid #fb4dd0;
+  color: #fb4dd0;
+  border-radius: 8px;
+  font-size: 0.6em;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.github-link a:hover {
+  background-color: #fb4dd0;
+  color: #121212;
+}
+
+.divider {
+  width: 80%;
+  margin: 40px auto 20px auto;
+  border: none;
+  border-top: 1px solid #fbeb04;
+  opacity: 0.3;
+}
+
+.logo-inline {
+  height: 1.5em;
+  width: auto;
+  vertical-align:auto;
+  margin: 0 0px;
+  border-radius: 50%;
+}
+
       footer {
-        margin-top: 50px;
-        font-size: 0.45em;
+        margin-top: 20px;
+        font-size: 0.6em;
         opacity: 0.5;
       }
     </style>
@@ -78,8 +115,15 @@
       <esp-web-install-button class="" manifest="manifest.json">
         Instalar Mando Bluetooth
       </esp-web-install-button>
-
-      <footer>Desarrollado por @NovenRetro · Córdoba, Argentina</footer>
+      <hr class="divider"> 
+      <div class="github-link">
+        <a href="https://github.com/NovenRetro/famicom-gamepad-bluetooth-mod/?tab=readme-ov-file" target="_blank">
+          Ver Proyecto en GitHub
+        </a>
+      </div>      
+      <footer>
+        <img src="logo-novenretro.png" alt="Logo NovenRetro" class="logo-inline"> Desarrollado por @NovenRetro · Córdoba, Argentina
+      </footer>
     </div>
   </body>
 </html>
