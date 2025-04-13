@@ -97,6 +97,42 @@
   border-radius: 50%;
 }
 
+.images-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 40px 20px 20px;
+}
+
+.img-box {
+  text-align: center;
+  max-width: 150px;
+}
+
+.img-box img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border: 1px solid #444;
+  background-color: #000;
+}
+
+
+.img-box img:hover {
+  transform: scale(1.05);
+}
+
+.img-box p {
+  font-size: 0.5em;
+  margin-top: 8px;
+  color: #fbeb04;
+}
+
+
       footer {
         margin-top: 20px;
         font-size: 0.6em;
@@ -112,9 +148,32 @@
         <br><br>Puede que sea necesario que mantengas apretado el botón de Boot de tu ESP32 mientras se realiza el proceso.</p>
         <p>Recuerda debes ingresar desde Google Chrome o Edge en PC para que funcione correctamente.</p>
       
-      <esp-web-install-button class="" manifest="manifest.json">
-        Instalar Mando Bluetooth
+      <esp-web-install-button class="" manifest="manifest.json"> 
       </esp-web-install-button>
+
+      <div class="images-row">
+        <div class="img-box">
+          <a href="esquema-de-conexiones.png" target="_blank">
+            <img src="esquema-de-conexiones.png" alt="Conexiones">
+          </a>
+          <p>Conexiones</p>
+        </div>
+      
+        <div class="img-box">
+          <a href="config-blueretro.jpg" target="_blank">
+            <img src="config-blueretro.jpg" alt="Config BlueRetro">
+          </a>
+          <p>Config BlueRetro</p>
+        </div>
+      
+        <div class="img-box">
+          <a href="mapeo-blueretro.jpg" target="_blank">
+            <img src="mapeo-blueretro.jpg" alt="Mapeo BlueRetro">
+          </a>
+          <p>Mapeo BlueRetro</p>
+        </div>
+      </div>
+
       <hr class="divider"> 
       <div class="github-link">
         <a href="https://github.com/NovenRetro/famicom-gamepad-bluetooth-mod/?tab=readme-ov-file" target="_blank">
