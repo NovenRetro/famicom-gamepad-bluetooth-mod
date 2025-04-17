@@ -6,8 +6,16 @@
       "chipFamily": "ESP32",
       "parts": [
         {
-          "path": "firmware.bin",
-          "offset": 0
+          "path": "GAMEPAD_BT_FAMICOM_NR.ino.bootloader.bin",
+          "offset": 4096
+        },
+        {
+          "path": "GAMEPAD_BT_FAMICOM_NR.ino.partitions.bin",
+          "offset": 32768
+        },
+        {
+          "path": "GAMEPAD_BT_FAMICOM_NR.ino.bin",
+          "offset": 65536
         }
       ]
     }
